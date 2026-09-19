@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* LIGHT MODE — Soft blue-gray background, electric blue primary */
+    --color-bg: 210 20% 96%;
+    --color-surface: 0 0% 100%;
+    --color-primary: 210 100% 50%;
+    --color-accent: 180 100% 50%;
+    --color-border: 214 32% 91%;
+    --color-text-primary: 222 47% 11%;
+    --color-text-secondary: 215 16% 47%;
+
+    /* Legacy compatibility */
+    --background: var(--color-bg);
+    --foreground: var(--color-text-primary);
+
+    --primary: var(--color-primary);
+    --primary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 97%;
+    --muted-foreground: var(--color-text-secondary);
+
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-text-primary);
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: var(--color-border);
+    --input: 210 25% 95%;
+    --ring: var(--color-primary);
+
+    --radius: 1rem;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* DARK MODE — Deep navy background, bright electric blue primary, glowing cyan accent */
+  .dark {
+    --color-bg: 222 47% 7%;
+    --color-surface: 222 47% 11%;
+    --color-primary: 210 100% 60%;
+    --color-accent: 180 100% 60%;
+    --color-border: 217 33% 20%;
+    --color-text-primary: 210 40% 95%;
+    --color-text-secondary: 215 20% 65%;
+
+    /* Legacy compatibility */
+    --background: var(--color-bg);
+    --foreground: var(--color-text-primary);
+
+    --primary: var(--color-primary);
+    --primary-foreground: 222 47% 7%;
+
+    --muted: 217 33% 15%;
+    --muted-foreground: var(--color-text-secondary);
+
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-text-primary);
+
+    --border: var(--color-border);
+    --input: 217 33% 18%;
+    --ring: var(--color-primary);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  a {
+    font-weight: 500;
+    @apply text-primary;
+    text-decoration: inherit;
+  }
+
+  a:hover {
+    @apply text-primary/80;
+  }
+}
+
+/* Date/datetime input calendar icon: black in light theme, white in dark theme */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .dark input[type="date"]::-webkit-calendar-picker-indicator,
+  .dark input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+@layer components {
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary to-primary/70;
+  }
+
+  /* Premium card styling */
+  .card-premium {
+    @apply rounded-2xl p-4 sm:p-5 md:p-6 bg-surface border border-border;
+    @apply transition-all duration-200;
+    @apply hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  .dark .card-premium {
+    @apply ring-1 ring-primary/20;
+  }
+
+  /* Status badge styling */
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+  }
+
+  .badge-warning {
+    @apply bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400;
+  }
+
+  .badge-danger {
+    @apply bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400;
+  }
+
+  .badge-info {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400;
+  }
+}
+
+/* ML Analytics page tab headings: black in light, white in dark, blue when selected */
+.ml-analytics-tabs .MuiTab-root {
+  color: #000000 !important;
+}
+.ml-analytics-tabs .MuiTab-root.Mui-selected {
+  color: #1976d2 !important;
+}
+.dark .ml-analytics-tabs .MuiTab-root {
+  color: #ffffff !important;
+}
+.dark .ml-analytics-tabs .MuiTab-root.Mui-selected {
+  color: #42a5f5 !important;
+}
