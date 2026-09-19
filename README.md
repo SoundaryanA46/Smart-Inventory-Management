@@ -58,6 +58,8 @@ The system supports demand prediction for future planning and inventory optimiza
 ---
 
 ## 🏗️ System Architecture
+<img width="5052" height="6333" alt="diagram (1)" src="https://github.com/user-attachments/assets/73d55fd5-d898-469c-be74-4a04c95a3cb4" />
+
 
 ```text
                     ┌───────────────────────┐
