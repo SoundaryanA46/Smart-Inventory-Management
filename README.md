@@ -1,8 +1,8 @@
 # 📦 Smart Inventory Management System
 
-A full-stack **Smart Inventory Management System** that combines inventory management, role-based access control, stock monitoring, expiry tracking, alerts, reporting, and machine-learning-based inventory analysis into a centralized platform.
+A full-stack **Smart Inventory Management System** that combines inventory management, role-based access control, stock monitoring, alerts, reporting, and machine-learning-based inventory analysis into a centralized platform.
 
-The system is designed to help organizations manage products efficiently, monitor stock levels, identify low-stock and expiring products, maintain transaction history, and support inventory decisions using data-driven insights.
+The system is designed to help organizations manage products efficiently, monitor stock levels, identify low-stock and maintain transaction history, and support inventory decisions using data-driven insights.
 
 ---
 
@@ -29,22 +29,9 @@ The system is designed to help organizations manage products efficiently, monito
 
 * Low-stock alerts
 * Product expiry monitoring
-* Expiry status classification
 * Identification of critical and expired products
 * Automated inventory notifications
 
-### ⏳ Expiry Management
-
-The system monitors product expiry using product dates and shelf-life information.
-
-Products can be categorized into:
-
-* `SAFE`
-* `WARNING`
-* `CRITICAL`
-* `EXPIRED`
-
-This helps users identify products that require attention before they become unusable.
 
 ### 🤖 Machine Learning & Analytics
 
@@ -211,36 +198,13 @@ Inventory Updated
      ↓
 Monitor Stock
      ↓
-Low Stock / Expiry Detection
+Low Stock 
      ↓
 Alert Generated
      ↓
 ML-Based Analysis
      ↓
 Demand / Reorder Insight
-```
-
----
-
-## ⏰ Expiry Monitoring
-
-The system tracks:
-
-* Manufacturing date
-* Expiry date
-* Shelf life
-* Remaining days
-* Expiry status
-* Discount percentage
-* Waste status
-
-Example:
-
-```text
-SAFE      → Product has sufficient remaining shelf life
-WARNING   → Product is approaching expiry
-CRITICAL  → Product requires immediate attention
-EXPIRED   → Product has passed its expiry date
 ```
 
 ---
@@ -283,7 +247,6 @@ Major responsibilities include:
 * Inventory management
 * Stock transactions
 * Alerts
-* Expiry tracking
 * Reports
 * Database operations
 * ML integration
@@ -302,7 +265,6 @@ It provides interfaces for:
 * Inventory management
 * Stock operations
 * Alerts
-* Expiry monitoring
 * Reports
 * Analytics
 
@@ -455,7 +417,6 @@ Recommended screenshots:
 * Product management
 * Inventory management
 * Low-stock alerts
-* Expiry alerts
 * ML analytics
 * Reports
 
@@ -485,25 +446,7 @@ This project was developed as a collaborative team project.
 
 * Soundaryan Anbalagan
 * Vishaal Saravanakumar
-* Project Team Members
-
-> Update this section with the exact names and GitHub profiles of all team members who contributed to the project.
-
----
-
-## 🔮 Future Enhancements
-
-Potential future improvements include:
-
-* Advanced demand forecasting models
-* More sophisticated anomaly detection
-* Automated purchase-order generation
-* Real-time notifications
-* Cloud deployment
-* Mobile application
-* Advanced inventory analytics
-* Improved ML model evaluation
-* Integration with external business systems
+* Utkarsh
 
 ---
 
@@ -526,7 +469,6 @@ See the [`LICENSE`](./LICENSE) file for details.
 ✔ Role-based access control
 ✔ Stock management
 ✔ Low-stock alerts
-✔ Expiry monitoring
 ✔ PDF / CSV reporting
 ✔ Machine learning integration
 ✔ Demand forecasting
