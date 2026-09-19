@@ -489,6 +489,11 @@ See the [`LICENSE`](./LICENSE) file for details.
 
 ## 🔗 Repository
 
-GitHub:
+GitHub :
 
 https://github.com/SoundaryanA46/Smart-Inventory-Management
+
+🚀 Live Demo :
+
+[https://Smart-Inventory-System-url.com](https://smart-inventory-management-frontend.vercel.app/)
+
