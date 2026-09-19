@@ -407,18 +407,28 @@ For public repositories, use an `.env.example` file containing placeholders rath
 
 ## 📸 Screenshots
 
-Add screenshots of the major application screens here.
-
-Recommended screenshots:
-
 * Login page
+<img width="1875" height="900" alt="Screenshot 2026-04-15 142253" src="https://github.com/user-attachments/assets/869f4d91-e352-46bc-8072-7c20ae691151" />
+<img width="1454" height="815" alt="image" src="https://github.com/user-attachments/assets/524d41dc-4d53-4780-8ff3-f88d4867d902" />
 * Admin dashboard
+  <img width="1437" height="793" alt="image" src="https://github.com/user-attachments/assets/b1f245a3-0795-4a8d-9f08-81d5cc114c44" />
+
 * Employee dashboard
+  <img width="1437" height="841" alt="image" src="https://github.com/user-attachments/assets/737370a8-b13a-47e1-9ff8-e7f10e4d85cb" />
 * Product management
-* Inventory management
+  <img width="1454" height="794" alt="image" src="https://github.com/user-attachments/assets/790c7c32-4e99-466f-90ba-5e4b60926118" />
+
+* Transactions management
+  <img width="1454" height="794" alt="image" src="https://github.com/user-attachments/assets/0641818c-adfa-4318-8543-650c42e9c6e2" />
 * Low-stock alerts
+  <img width="1437" height="772" alt="image" src="https://github.com/user-attachments/assets/750accdc-52dc-4aa8-85ac-6ea9cc0dbd34" />
+
 * ML analytics
+   <img width="1423" height="794" alt="image" src="https://github.com/user-attachments/assets/90a88929-934c-4e12-b2e1-28f37c44febf" />
+
 * Reports
+   <img width="1437" height="801" alt="image" src="https://github.com/user-attachments/assets/badd45f4-a752-43fc-a7d9-994b0557140c" />
+
 
 Example:
 
